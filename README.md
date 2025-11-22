@@ -3,10 +3,20 @@
 ![](images/Baseball_1.jpg)
 
 ## 1. Introduction
+
 Our team explores **MLB batting performance indicators** using data from Baseball Savant.  
-**Decision-maker / Context:** Baseball analysts and coaches interested in understanding player performance and team-level KPIs.
-**Research Question:** Which batting metrics are most predictive of overall offensive value, and how does player/team performance over time indicate future success?  
-**Impact:** Insights could guide player evaluation, team decisions, and strategy planning.
+
+**Decision-maker / Context:**
+
+- Baseball analysts and coaches interested in understanding player performance and team-level KPIs.
+
+**Research Question:**
+
+- Which batting metrics are most predictive of overall offensive value, and how does player/team performance over time indicate future success?  
+
+**Impact:**
+
+- Insights could guide player evaluation, team decisions, and strategy planning.
 
 ---
 
