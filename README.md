@@ -60,7 +60,7 @@ Our team explores **MLB batting performance indicators** using data from Basebal
 | xwobacon             | Expected wOBA on contact based on batted-ball data                                      |
 | exit_velocity_avg    | Average exit velocity (mph) of all balls the player hits 
 
-&nbsp;&nbsp;**2) Team-level Metrics:**
+&nbsp;&nbsp;**2) Team-level Metrics**
 
 | Abbreviation | Full Name / Description                                     |
 |-------------|--------------------------------------------------------------|
@@ -291,5 +291,6 @@ On-Base Percentage (OBP), Slugging Percentage (SLG), Isolated power, Batting avg
 
 
 ---
+
 
 
