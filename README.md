@@ -4,7 +4,7 @@
 
 ## Executive Summary
 
-This report analyzes MLB offensive performance indicators from 2021–2025 and projects team and player level trends through 2028. Using data from **Baseball Savant**, we identified key metrics — OPS, ISO, OBP, SLG, and exit velocity — that strongly influence offensive success. The report targets new MLB managers entering the field.
+This report analyzes MLB offensive performance indicators from 2021–2025 and projects team and player-level trends through 2028. Using data from **Baseball Savant**, we identified key metrics — OPS, ISO, OBP, SLG, and exit velocity — that strongly influence offensive success. The report targets new MLB Roster execustives entering the field.
 
 Data-driven insights help prioritize acquisitions, lineup decisions, and development focus for immediate and long-term impact.
 
@@ -50,7 +50,7 @@ Our team analyzes **MLB batting performance indicators** using data from Basebal
 
 **Data characteristics:**
 
-- Mixed continuous metrics, percentages, and categorical identifiers (player name, year, team).
+- Mixed continuous metrics, percentage based metrics, and categorical identifiers (player name, year, team).
 - Source: Baseball Savant official website (https://baseballsavant.mlb.com/)
 
 **Data Metrics Glossary:**
