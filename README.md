@@ -4,7 +4,7 @@
 
 ## Executive Summary
 
-This report analyzes MLB offensive performance indicators from 2021–2025 and projects team and player-level trends through 2028. Using data from **Baseball Savant**, we identified key metrics — OPS, ISO, OBP, SLG, and exit velocity — that strongly influence offensive success. The report targets new MLB Roster execustives entering the field.
+This report analyzes MLB offensive performance indicators from 2021–2025 and projects team and player-level trends through 2028. Using data from **Baseball Savant**, we identified key metrics — OPS, ISO, OBP, SLG, and exit velocity — that strongly influence offensive success. This report is designed for MLB roster executives who are entering the field and need data-driven insights for player evaluation and offensive strategy.
 
 Data-driven insights help prioritize acquisitions, lineup decisions, and development focus for immediate and long-term impact.
 
@@ -24,7 +24,7 @@ Data-driven insights help prioritize acquisitions, lineup decisions, and develop
 
 ## 1. Introduction
 
-Our team analyzes **MLB batting performance indicators** using data from Baseball Savant covering the period from 2021–2025. This analysis focuses on metrics that are predictive of team and player success, such as: EV, OPS, ISO, OBP, and SLG.
+Our team analyzed **MLB batting performance indicators** using data from Baseball Savant covering the period from 2021–2025. This analysis focuses on metrics that are predictive of team and player success, such as EV, OPS, ISO, OBP, and SLG.
 
 **Decision-maker:**
 
@@ -50,7 +50,7 @@ Our team analyzes **MLB batting performance indicators** using data from Basebal
 
 **Data characteristics:**
 
-- Mixed continuous metrics, percentage based metrics, and categorical identifiers (player name, year, team).
+- Mixed continuous metrics, percentage-based metrics, and categorical identifiers (player name, year, team).
 - Source: Baseball Savant official website (https://baseballsavant.mlb.com/)
 
 **Data Metrics Glossary:**
@@ -259,7 +259,7 @@ These plots show relationships between exit velocity and player hitting stats, a
 
 ## 4. Conclusion
 
-Our analysis combined historical MLB player and team level statistics with regression-based projections to estimate future offensive performance for 2026–2028. By examining KPIs such as SLG, OBP, OPS, ISO, RBI, Batting Average, and Exit Velocity, we generated insights into which metrics are most indicative of future success.
+Our analysis combined historical MLB player and team-level statistics with regression-based projections to estimate future offensive performance for 2026–2028. By examining KPIs such as SLG, OBP, OPS, ISO, RBI, Batting Average, and Exit Velocity, we generated insights into which metrics are most indicative of future success.
 
 **Key Findings:**
 
@@ -278,7 +278,7 @@ Our analysis combined historical MLB player and team level statistics with regre
 **Heatmaps and Scatter Plots:**
 
 - Visualizations confirm metric relationships and validate the linear regression models used for projections.
-Scatter plots visually confirm the moderate relationships between EV and power statistics.
+- Scatter plots visually confirm the moderate relationships between EV and power statistics.
 
 **Limitations:**
 
@@ -298,7 +298,7 @@ Scatter plots visually confirm the moderate relationships between EV and power s
 
 **Hypothetical Decision:**
 
-- Prioritize player acquisitions, lineup optimization, trade evaluation, and contract negotiations based on projected offensive outputs.
+- Prioritize player acquisitions, lineup optimization, trade evaluation, and contract negotiations based on projected offensive output.
 
 **Data-driven Recommendation:**
 
@@ -326,7 +326,7 @@ Scatter plots visually confirm the moderate relationships between EV and power s
 - Created a common repo
 - Created project outline
 - Assigned roles
-- Learnt GitHub Desktop workflow (branch management, Commit / push /pull)
+- Learned GitHub Desktop workflow (branch management, Commit / push /pull)
 - Agreed on main indicators & KPIs to analyze
 - Agreed on key findings and recommendations
 
@@ -336,7 +336,8 @@ Scatter plots visually confirm the moderate relationships between EV and power s
 
 | Member | Role | Contribution |
 |---|---|---|
-| Matthew G Gonzalez | Project Lead / Co Head Developer | Data cleansing + Writing codes + visualization + findings and write-up |
+| Matthew D Gonzalez | Project Lead / Co Head Developer | Data cleansing + Writing code + visualization + findings and write-up |
 | Jacob D Lamothe | Code Editor/Checker + Video Editor + Presentation/Narration Lead | Checks code for mistakes/redundancies + statistical validation + Edits video at the end of project |
 | Rodolfo Lazaro | Visualization Designer | Tableau plots + checking visualizations |
 | Samir Soliman | Head Developer | Import data + write codes + statistical Validation/Model Evaluation + findings and write-up |
+
