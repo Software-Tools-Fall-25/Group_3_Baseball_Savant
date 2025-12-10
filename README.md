@@ -256,7 +256,7 @@ These plots show relationships between exit velocity and player hitting stats, a
 Tableau was used to explore, visualize, and communicate trends in both player- and team-level KPIs. It allows interactive filtering, ranking, and comparison across multiple metrics, making it easier to identify top-performing players and teams, as well as project future performance.
 
 **Sample visualization**
-![Exit Velocity By Year](Tableau/plots/EV_Year.png)
+![Exit Velocity By Year](images/EV_Year.png)
 
 **Full Storyboard**
 [View the Full Interactive Tableau Storyboard](https://public.tableau.com/app/profile/rodolfo.lazaro/viz/BaseballSavantFinalProject/BaseballSavant)
