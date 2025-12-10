@@ -172,37 +172,25 @@ These plots show projected team-level KPIs for the next three seasons of top 10 
 ![Projected Win Percentage](output/MLB_team_projection_Win%20Percentage_2026_2028.png)  
 *Description: Projected win percentage for top MLB teams, showing expected growth/decline in team performance over three years.*
 
-<p style="border-top:1px solid #ccc;"></p>
-
 **Projected SLG (2026–2028)**  
 ![Projected SLG](output/MLB_team_projection_SLG_2026_2028.png)  
 *Description: Shows projected slugging performance of top teams. Patterns indicate which teams may improve power hitting.*
-
-<p style="border-top:1px solid #ccc;"></p>
 
 **Projected OBP (2026–2028)**  
 ![Projected OBP](output/MLB_team_projection_OBP_2026_2028.png)  
 *Description: Team on-base percentage projection, reflecting plate discipline and consistency.*
 
-<p style="border-top:1px solid #ccc;"></p>
-
 **Projected RBI (2026–2028)**  
 ![Projected RBI](output/MLB_team_projection_RBI_2026_2028.png)  
 *Description: Estimated run production by team, linked to scoring potential.*
-
-<p style="border-top:1px solid #ccc;"></p>
 
 **Projected ISO (2026–2028)**
 ![Projected ISO](output/MLB_team_projection_ISO_2026_2028.png)  
 *Description: Measures team isolated power, highlighting teams likely to hit extra-base hits.*
 
-<p style="border-top:1px solid #ccc;"></p>
-
 **Projected OPS (2026–2028)**  
 ![Projected OPS](output/MLB_team_projection_OPS_2026_2028.png)  
 *Description: Combined on-base plus slugging metric, giving a broad measure of offensive efficiency.*
-
-<p style="border-top:1px solid #ccc;"></p>
 
 ### 3.2 Player Projections (2026–2028)
 
@@ -212,91 +200,63 @@ These plots show projected player-level KPIs for the top 10 players based on pri
 ![Projected SLG](output/MLB_player_projection_SLG_2026_2028.png)  
 *Description: Expected slugging trends for top players, highlighting consistency and potential breakout performers.*
 
-<p style="border-top:1px solid #ccc;"></p>
-
 **Projected OPS for Top Players**  
 ![Projected OPS](output/MLB_player_projection_OPS_2026_2028.png)  
 *Description: Combines OBP and SLG for a holistic view of player offensive output.*
-
-<p style="border-top:1px solid #ccc;"></p>
 
 **Projected ISO for Top Players**  
 ![Projected ISO](output/MLB_player_projection_ISO_2026_2028.png)  
 *Description: Player isolated power trends, indicating extra-base hitting capability.*
 
-<p style="border-top:1px solid #ccc;"></p>
-
 **Projected Batting Average for Top Players**  
 ![Projected Batting Average](output/MLB_player_projection_Batting%20Average_2026_2028.png)  
 *Description: Tracks expected hit rate per at-bat for top players.*
-
-<p style="border-top:1px solid #ccc;"></p>
 
 **Projected OBP for Top Players**  
 ![Projected OBP](output/MLB_player_projection_OBP_2026_2028.png)  
 *Description: Player on-base percentage projections, reflecting consistency and plate discipline.*
 
-<p style="border-top:1px solid #ccc;"></p>
-
 **Projected RBI for Top Players**  
 ![Projected RBI](output/MLB_player_projection_RBI_2026_2028.png)  
 *Description: Expected run production per player, linked to scoring potential.*
-
-<p style="border-top:1px solid #ccc;"></p>
 
 **Projected Exit Velocity for Top Players**  
 ![Projected Exit Velocity](output/MLB_player_projection_Exit%20Velocity%20(mph)_2026_2028.png)  
 *Description: Exit velocity trend predictions, showing higher values often correlate with power hitting.*
 
-<p style="border-top:1px solid #ccc;"></p>
-
 ### 3.3 Relationship Analysis: Scatter Plots & Heatmaps
 
 These plots show relationships between exit velocity and player hitting stats, and overall correlations among KPIs.
 
-**EV vs SLG:**
 ![EV vs SLG](output/ev%20vs%20slg.png)  
 *Description: This scatterplot shows a clear positive relationship between Exit Velocity (EV) and Slugging Percentage (SLG). Players with higher EV tend to produce more extra-base power. The moderate correlation (0.62) aligns with the upward trend observed, indicating that EV is a meaningful but not sole predictor of SLG.*
 
-<p style="border-top:1px solid #ccc;"></p>
-
-**EV vs RBI:**  
 ![EV vs RBI](output/ev%20vs%20rbi.png)  
 *Description: The plot indicates a moderate positive relationship between EV and Runs Batted In (RBI), with a correlation of 0.55. While stronger contact contributes to more run production, RBI is also context-dependent, influenced by lineup position and teammates’ baserunning. The scatterplot trend supports the moderate correlation seen in the heatmap.*
 
-<p style="border-top:1px solid #ccc;"></p>
-
-**EV vs OPS:**  
 ![EV vs OPS](output/ev%20vs%20ops.png)  
 *Description: The scatterplot shows a positive trend between EV and On-base Plus Slugging (OPS), with a correlation of 0.58. EV contributes to OPS largely through its influence on SLG and power-related outcomes. The scatterplot confirms a moderate association, highlighting that EV is relevant but not the only determinant of OPS.*
 
-<p style="border-top:1px solid #ccc;"></p>
-
-**EV vs ISO:**  
 ![EV vs ISO](output/ev%20vs%20iso.png)  
 *Description: This scatterplot demonstrates a strong positive relationship between EV and Isolated Power (ISO), with a correlation of 0.65. Players who hit the ball harder tend to generate more power independent of batting average, confirming EV’s strong link to pure power metrics.*
 
-<p style="border-top:1px solid #ccc;"></p>
-
 **Players Metrics Heatmap**
-![Players Metrics Heatmap](output/correlation_heatmap_players.png)
+
+![](output/correlation_heatmap_players.png)
 
 *Description: The heatmap summarizes the relationships among all player offensive metrics. EV shows moderate correlations with power-oriented KPIs (SLG, ISO, OPS, and RBI), reinforcing its role as a useful predictor for future offensive performance. Weakly correlated metrics like batting average and OBP are visually confirmed by the lack of strong trend in their scatterplots.*
 
-<p style="border-top:1px solid #ccc;"></p>
+**Team Rankings Heatmap (2021–2025 averages)**
 
-**Team Rankings Heatmap (2021–2025 averages):**  
-![Team Rankings Heatmap](output/heatmap_team_rankings.png)
+![](output/heatmap_team_rankings.png)
 *Description: This heatmap ranks teams across key offensive KPIs (SLG, OBP, ISO, OPS, RBI, and Win%). The color gradient highlights relative performance: red indicates top-ranked teams, while blue represents the lower-performing ones. This allows for quick identification of consistently elite offenses versus teams that underperform across multiple KPIs. It also helps validate the selection of top-10 teams for forward projections by revealing their sustained strength across several metrics.*
-
-<p style="border-top:1px solid #ccc;"></p>
 
 ### 3.4 Tableau (Dashboard & Storyboard Visualization)
 
 Tableau was used to explore, visualize, and communicate trends in both player- and team-level KPIs. It allows interactive filtering, ranking, and comparison across multiple metrics, making it easier to identify top-performing players and teams, as well as project future performance.
 
 **Sample visualization**
-![](Tableau/plots/EV_By_Year.png)
+![Exit Velocity By Year](Tableau/plots/EV_By_Year.png)
 
 **Full Storyboard**
 [View the Full Interactive Tableau Storyboard](https://public.tableau.com/app/profile/rodolfo.lazaro/viz/BaseballSavantFinalProject/BaseballSavant)
@@ -313,17 +273,17 @@ Tableau was used to explore, visualize, and communicate trends in both player- a
 
 ### 3.5 Tools used: Advantages and Challenges
 
-**Python (Pandas, Matplotlib, Seaborn, Scikit-Learn)**
+* Python (Pandas, Matplotlib, Seaborn, Scikit-Learn)
 
-- Advantages: Excellent for data cleaning, automation of repetitive tasks, Strong statistical and machine-learning libraries for regression, correlation, and projections.
+  * Advantages: Excellent for data cleaning, automation of repetitive tasks, Strong statistical and machine-learning libraries for regression, correlation, and projections.
 
-- Challenges: Visualization requires more manual formatting to produce good quality plots. And it Requires careful path and environment management across machines and repos.
+  * Challenges: Visualization requires more manual formatting to produce good quality plots. And it Requires careful path and environment management across machines and repos.
 
-**RStudio (for Markdown editing and report generation)**
+* RStudio (for Markdown editing and report generation)
 
-- Advantages: Provides a clean interface for editing markdown files with real-time rendering, and easy way to embed figures, captions, and formatting for final report production.
+  * Advantages: Provides a clean interface for editing markdown files with real-time rendering, and easy way to embed figures, captions, and formatting for final report production.
 
-- Challenges: Figure dimension behavior differs from GitHub’s markdown rendering.
+  * Challenges: Figure dimension behavior differs from GitHub’s markdown rendering.
 
 ---
 
