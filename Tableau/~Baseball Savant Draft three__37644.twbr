@@ -1,0 +1,3308 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='MLB team stats 2021-2025' inline='true' name='federated.1b90ryj0zuxphk1fyg8850c0wp2b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='MLB team stats 2021-2025' name='textscan.1e4adgq1jynelx12cfcn402y3g76'>
+            <connection class='textscan' directory='C:/Users/rudya/AppData/Local/Temp/TableauTemp/4067355200/Data' filename='MLB team stats 2021-2025.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1e4adgq1jynelx12cfcn402y3g76' name='MLB team stats 2021-2025.csv' table='[MLB team stats 2021-2025#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Rank' ordinal='0' />
+            <column datatype='string' name='Team' ordinal='1' />
+            <column datatype='real' name='Win%' ordinal='2' />
+            <column datatype='real' name='Avg. SLG (2021-2025)' ordinal='3' />
+            <column datatype='real' name='Avg. OBP (2021-2025)' ordinal='4' />
+            <column datatype='integer' name='Avg. RBI (2021-2025)' ordinal='5' />
+            <column datatype='real' name='Avg. ISO (2021-2025)' ordinal='6' />
+            <column datatype='real' name='Avg. OPS (2021-2025)' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[MLB team stats 2021-2025.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[MLB team stats 2021-2025.csv]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MLB team stats 2021-2025.csv_78769772235C43AD87C7C23C39EE82DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[MLB team stats 2021-2025.csv]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[MLB team stats 2021-2025.csv_78769772235C43AD87C7C23C39EE82DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Win%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Win%]</local-name>
+            <parent-name>[MLB team stats 2021-2025.csv]</parent-name>
+            <remote-alias>Win%</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MLB team stats 2021-2025.csv_78769772235C43AD87C7C23C39EE82DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg. SLG (2021-2025)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg. SLG (2021-2025)]</local-name>
+            <parent-name>[MLB team stats 2021-2025.csv]</parent-name>
+            <remote-alias>Avg. SLG (2021-2025)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MLB team stats 2021-2025.csv_78769772235C43AD87C7C23C39EE82DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg. OBP (2021-2025)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg. OBP (2021-2025)]</local-name>
+            <parent-name>[MLB team stats 2021-2025.csv]</parent-name>
+            <remote-alias>Avg. OBP (2021-2025)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MLB team stats 2021-2025.csv_78769772235C43AD87C7C23C39EE82DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg. RBI (2021-2025)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Avg. RBI (2021-2025)]</local-name>
+            <parent-name>[MLB team stats 2021-2025.csv]</parent-name>
+            <remote-alias>Avg. RBI (2021-2025)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MLB team stats 2021-2025.csv_78769772235C43AD87C7C23C39EE82DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg. ISO (2021-2025)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg. ISO (2021-2025)]</local-name>
+            <parent-name>[MLB team stats 2021-2025.csv]</parent-name>
+            <remote-alias>Avg. ISO (2021-2025)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MLB team stats 2021-2025.csv_78769772235C43AD87C7C23C39EE82DF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg. OPS (2021-2025)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg. OPS (2021-2025)]</local-name>
+            <parent-name>[MLB team stats 2021-2025.csv]</parent-name>
+            <remote-alias>Avg. OPS (2021-2025)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[MLB team stats 2021-2025.csv_78769772235C43AD87C7C23C39EE82DF]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+      <column caption='MLB team stats 2021-2025.csv' datatype='table' name='[__tableau_internal_object_id__].[MLB team stats 2021-2025.csv_78769772235C43AD87C7C23C39EE82DF]' role='measure' type='quantitative' />
+      <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_1jug3ob0o9eeli16j9e8s1k9nj2k.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/07/2025 05:16:30 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rank</remote-alias>
+              <ordinal>0</ordinal>
+              <family>MLB team stats 2021-2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Team</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Team]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Team</remote-alias>
+              <ordinal>1</ordinal>
+              <family>MLB team stats 2021-2025.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Win%</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Win%]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Win%</remote-alias>
+              <ordinal>2</ordinal>
+              <family>MLB team stats 2021-2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg. SLG (2021-2025)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg. SLG (2021-2025)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg. SLG (2021-2025)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>MLB team stats 2021-2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg. OBP (2021-2025)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg. OBP (2021-2025)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg. OBP (2021-2025)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>MLB team stats 2021-2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg. RBI (2021-2025)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Avg. RBI (2021-2025)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg. RBI (2021-2025)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>MLB team stats 2021-2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg. ISO (2021-2025)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg. ISO (2021-2025)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg. ISO (2021-2025)</remote-alias>
+              <ordinal>6</ordinal>
+              <family>MLB team stats 2021-2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg. OPS (2021-2025)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg. OPS (2021-2025)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg. OPS (2021-2025)</remote-alias>
+              <ordinal>7</ordinal>
+              <family>MLB team stats 2021-2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Team:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Cleveland Guardians&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Toronto Blue Jays&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Philadelphia Phillies&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Boston Red Sox&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Seattle Mariners&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kansas City Royals&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Colorado Rockies&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Washington Nationals&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Chicago Cubs&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;St. Louis Cardinals&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;New York Mets&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Arizona Diamondbacks&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Pittsburgh Pirates&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Milwaukee Brewers&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Chicago White Sox&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Tampa Bay Rays&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Los Angeles Angels&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Los Angeles Dodgers&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Minnesota Twins&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;New York Yankees&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Oakland Athletics&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Detroit Tigers&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cincinnati Reds&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Texas Rangers&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Atlanta Braves&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;San Diego Padres&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Miami Marlins&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Houston Astros&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Baltimore Orioles&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;San Francisco Giants&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='MLB team stats 2021-2025.csv' id='MLB team stats 2021-2025.csv_78769772235C43AD87C7C23C39EE82DF'>
+            <properties context=''>
+              <relation connection='textscan.1e4adgq1jynelx12cfcn402y3g76' name='MLB team stats 2021-2025.csv' table='[MLB team stats 2021-2025#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Rank' ordinal='0' />
+                  <column datatype='string' name='Team' ordinal='1' />
+                  <column datatype='real' name='Win%' ordinal='2' />
+                  <column datatype='real' name='Avg. SLG (2021-2025)' ordinal='3' />
+                  <column datatype='real' name='Avg. OBP (2021-2025)' ordinal='4' />
+                  <column datatype='integer' name='Avg. RBI (2021-2025)' ordinal='5' />
+                  <column datatype='real' name='Avg. ISO (2021-2025)' ordinal='6' />
+                  <column datatype='real' name='Avg. OPS (2021-2025)' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Baseball_Savant' inline='true' name='federated.14mhqo70xplor113i0j4j0ui93zp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Baseball_Savant' name='textscan.1p7v8ac0v3olam1fnhw0r19bp2th'>
+            <connection class='textscan' directory='C:/Users/rudya/Downloads' filename='Baseball_Savant.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1p7v8ac0v3olam1fnhw0r19bp2th' name='Baseball_Savant.csv' table='[Baseball_Savant#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='last_name, first_name' ordinal='0' />
+            <column datatype='integer' name='player_id' ordinal='1' />
+            <column datatype='integer' name='year' ordinal='2' />
+            <column datatype='integer' name='player_age' ordinal='3' />
+            <column datatype='integer' name='pa' ordinal='4' />
+            <column datatype='integer' name='hit' ordinal='5' />
+            <column datatype='real' name='k_percent' ordinal='6' />
+            <column datatype='real' name='bb_percent' ordinal='7' />
+            <column datatype='real' name='batting_avg' ordinal='8' />
+            <column datatype='real' name='slg_percent' ordinal='9' />
+            <column datatype='real' name='on_base_percent' ordinal='10' />
+            <column datatype='real' name='on_base_plus_slg' ordinal='11' />
+            <column datatype='real' name='isolated_power' ordinal='12' />
+            <column datatype='real' name='babip' ordinal='13' />
+            <column datatype='integer' name='b_rbi' ordinal='14' />
+            <column datatype='real' name='xba' ordinal='15' />
+            <column datatype='real' name='xslg' ordinal='16' />
+            <column datatype='real' name='woba' ordinal='17' />
+            <column datatype='real' name='xwoba' ordinal='18' />
+            <column datatype='real' name='xobp' ordinal='19' />
+            <column datatype='real' name='xiso' ordinal='20' />
+            <column datatype='real' name='wobacon' ordinal='21' />
+            <column datatype='real' name='xwobacon' ordinal='22' />
+            <column datatype='real' name='exit_velocity_avg' ordinal='23' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_name, first_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[last_name, first_name]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>last_name, first_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[player_id]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>player_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[player_age]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>player_age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pa</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pa]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>pa</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hit]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>hit</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>k_percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[k_percent]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>k_percent</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bb_percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bb_percent]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>bb_percent</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batting_avg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[batting_avg]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>batting_avg</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>slg_percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[slg_percent]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>slg_percent</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>on_base_percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[on_base_percent]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>on_base_percent</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>on_base_plus_slg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[on_base_plus_slg]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>on_base_plus_slg</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>isolated_power</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[isolated_power]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>isolated_power</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>babip</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[babip]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>babip</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>b_rbi</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[b_rbi]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>b_rbi</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>xba</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[xba]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>xba</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>xslg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[xslg]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>xslg</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>woba</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[woba]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>woba</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>xwoba</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[xwoba]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>xwoba</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>xobp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[xobp]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>xobp</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>xiso</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[xiso]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>xiso</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wobacon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[wobacon]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>wobacon</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>xwobacon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[xwobacon]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>xwobacon</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>exit_velocity_avg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[exit_velocity_avg]</local-name>
+            <parent-name>[Baseball_Savant.csv]</parent-name>
+            <remote-alias>exit_velocity_avg</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Baseball_Savant.csv' datatype='table' name='[__tableau_internal_object_id__].[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]' role='measure' type='quantitative' />
+      <column caption='B Rbi' datatype='integer' name='[b_rbi]' role='measure' type='quantitative' />
+      <column caption='Babip' datatype='real' name='[babip]' role='measure' type='quantitative' />
+      <column caption='Batting Avg' datatype='real' name='[batting_avg]' role='measure' type='quantitative' />
+      <column caption='Bb Percent' datatype='real' name='[bb_percent]' role='measure' type='quantitative' />
+      <column caption='Exit Velocity Avg' datatype='real' name='[exit_velocity_avg]' role='measure' type='quantitative' />
+      <column caption='Hit' datatype='integer' name='[hit]' role='measure' type='quantitative' />
+      <column caption='Isolated Power' datatype='real' name='[isolated_power]' role='measure' type='quantitative' />
+      <column caption='K Percent' datatype='real' name='[k_percent]' role='measure' type='quantitative' />
+      <column caption='Last Name, First Name' datatype='string' name='[last_name, first_name]' role='dimension' type='nominal' />
+      <column caption='On Base Percent' datatype='real' name='[on_base_percent]' role='measure' type='quantitative' />
+      <column caption='On Base Plus Slg' datatype='real' name='[on_base_plus_slg]' role='measure' type='quantitative' />
+      <column caption='Pa' datatype='integer' name='[pa]' role='measure' type='quantitative' />
+      <column caption='Player Age' datatype='integer' name='[player_age]' role='measure' type='quantitative' />
+      <column caption='Player Id' datatype='integer' name='[player_id]' role='dimension' type='ordinal' />
+      <column caption='Slg Percent' datatype='real' name='[slg_percent]' role='measure' type='quantitative' />
+      <column caption='Woba' datatype='real' name='[woba]' role='measure' type='quantitative' />
+      <column caption='Wobacon' datatype='real' name='[wobacon]' role='measure' type='quantitative' />
+      <column caption='Xba' datatype='real' name='[xba]' role='measure' type='quantitative' />
+      <column caption='Xiso' datatype='real' name='[xiso]' role='measure' type='quantitative' />
+      <column caption='Xobp' datatype='real' name='[xobp]' role='measure' type='quantitative' />
+      <column caption='Xslg' datatype='real' name='[xslg]' role='measure' type='quantitative' />
+      <column caption='Xwoba' datatype='real' name='[xwoba]' role='measure' type='quantitative' />
+      <column caption='Xwobacon' datatype='real' name='[xwobacon]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp 1/#TableauTemp_1ghvkk30a5kncw1ei5wcg1b842ah.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/09/2025 07:30:15 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>last_name, first_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[last_name, first_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>last_name, first_name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>285</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>player_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[player_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>player_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>285</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>player_age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[player_age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>player_age</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pa</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[pa]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pa</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>208</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[hit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hit</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>105</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>k_percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[k_percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>k_percent</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>208</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bb_percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[bb_percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bb_percent</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>127</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>batting_avg</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[batting_avg]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>batting_avg</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>124</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>slg_percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[slg_percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>slg_percent</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>237</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>on_base_percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[on_base_percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>on_base_percent</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>132</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>on_base_plus_slg</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[on_base_plus_slg]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>on_base_plus_slg</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>279</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>isolated_power</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[isolated_power]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>isolated_power</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>210</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>babip</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[babip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>babip</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>135</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>b_rbi</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[b_rbi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>b_rbi</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>96</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>xba</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[xba]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>xba</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>111</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>xslg</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[xslg]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>xslg</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>246</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>woba</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[woba]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>woba</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>142</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>xwoba</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[xwoba]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>xwoba</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>148</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>xobp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[xobp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>xobp</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>134</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>xiso</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[xiso]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>xiso</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>223</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wobacon</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[wobacon]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wobacon</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>206</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>xwobacon</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[xwobacon]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>xwobacon</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>210</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>exit_velocity_avg</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[exit_velocity_avg]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>exit_velocity_avg</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Baseball_Savant.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>109</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <object-graph>
+        <objects>
+          <object caption='Baseball_Savant.csv' id='Baseball_Savant.csv_57C9BC5FEEFF4536B1E92B111FAD9DB7'>
+            <properties context=''>
+              <relation connection='textscan.1p7v8ac0v3olam1fnhw0r19bp2th' name='Baseball_Savant.csv' table='[Baseball_Savant#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='last_name, first_name' ordinal='0' />
+                  <column datatype='integer' name='player_id' ordinal='1' />
+                  <column datatype='integer' name='year' ordinal='2' />
+                  <column datatype='integer' name='player_age' ordinal='3' />
+                  <column datatype='integer' name='pa' ordinal='4' />
+                  <column datatype='integer' name='hit' ordinal='5' />
+                  <column datatype='real' name='k_percent' ordinal='6' />
+                  <column datatype='real' name='bb_percent' ordinal='7' />
+                  <column datatype='real' name='batting_avg' ordinal='8' />
+                  <column datatype='real' name='slg_percent' ordinal='9' />
+                  <column datatype='real' name='on_base_percent' ordinal='10' />
+                  <column datatype='real' name='on_base_plus_slg' ordinal='11' />
+                  <column datatype='real' name='isolated_power' ordinal='12' />
+                  <column datatype='real' name='babip' ordinal='13' />
+                  <column datatype='integer' name='b_rbi' ordinal='14' />
+                  <column datatype='real' name='xba' ordinal='15' />
+                  <column datatype='real' name='xslg' ordinal='16' />
+                  <column datatype='real' name='woba' ordinal='17' />
+                  <column datatype='real' name='xwoba' ordinal='18' />
+                  <column datatype='real' name='xobp' ordinal='19' />
+                  <column datatype='real' name='xiso' ordinal='20' />
+                  <column datatype='real' name='wobacon' ordinal='21' />
+                  <column datatype='real' name='xwobacon' ordinal='22' />
+                  <column datatype='real' name='exit_velocity_avg' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='BA'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Baseball_Savant' name='federated.14mhqo70xplor113i0j4j0ui93zp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14mhqo70xplor113i0j4j0ui93zp'>
+            <column-instance column='[batting_avg]' derivation='Avg' name='[avg:batting_avg:qk]' pivot='key' type='quantitative' />
+            <column caption='Batting Avg' datatype='real' name='[batting_avg]' role='measure' type='quantitative' />
+            <column caption='Last Name, First Name' datatype='string' name='[last_name, first_name]' role='dimension' type='nominal' />
+            <column-instance column='[last_name, first_name]' derivation='None' name='[none:last_name, first_name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:batting_avg:qk]' field-type='quantitative' max='0.33712221632919132' min='0.17999999999999999' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='whisker-stroke-size' id='refline0' value='4' />
+            <format attr='whisker-stroke-color' id='refline0' value='#000000' />
+            <format attr='whisker-end' id='refline0' value='large' />
+            <format attr='stroke-size' id='refline0' value='4' />
+            <format attr='stroke-color' id='refline0' value='#000000' />
+            <format attr='fill-color' id='refline0' value='#f0f0f0d9' />
+            <format attr='palette' id='refline0' value='bp_gray60' />
+            <format attr='opacity' id='refline0' value='86' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.14mhqo70xplor113i0j4j0ui93zp].[none:last_name, first_name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:batting_avg:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:batting_avg:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8350828886032104' />
+                <format attr='mark-color' value='#59a14f' />
+                <format attr='mark-transparency' value='180' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:batting_avg:qk]</cols>
+      </table>
+      <simple-id uuid='{16BC5227-77C6-45B9-9937-EE72B0927D60}' />
+    </worksheet>
+    <worksheet name='BA By Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Baseball_Savant' name='federated.14mhqo70xplor113i0j4j0ui93zp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14mhqo70xplor113i0j4j0ui93zp'>
+            <column-instance column='[year]' derivation='Attribute' name='[attr:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[batting_avg]' derivation='Avg' name='[avg:batting_avg:qk]' pivot='key' type='quantitative' />
+            <column caption='Batting Avg' datatype='real' name='[batting_avg]' role='measure' type='quantitative' />
+            <column caption='Last Name, First Name' datatype='string' name='[last_name, first_name]' role='dimension' type='nominal' />
+            <column-instance column='[last_name, first_name]' derivation='None' name='[none:last_name, first_name:nk]' pivot='key' type='nominal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:batting_avg:qk]' field-type='quantitative' max='0.37542704669109095' min='0.14000000000000001' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.14mhqo70xplor113i0j4j0ui93zp].[attr:year:ok]' value='*' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='stroke-size' id='refline0' value='4' />
+            <format attr='stroke-color' id='refline0' value='#000000' />
+            <format attr='opacity' id='refline0' value='86' />
+            <format attr='whisker-stroke-size' id='refline0' value='4' />
+            <format attr='whisker-stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.14mhqo70xplor113i0j4j0ui93zp].[none:last_name, first_name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:batting_avg:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:batting_avg:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.62569057941436768' />
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:batting_avg:qk]</rows>
+        <cols>[federated.14mhqo70xplor113i0j4j0ui93zp].[attr:year:ok]</cols>
+      </table>
+      <simple-id uuid='{7FE29C23-ECCB-4ADF-99E1-074492845EFB}' />
+    </worksheet>
+    <worksheet name='EV'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Baseball_Savant' name='federated.14mhqo70xplor113i0j4j0ui93zp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14mhqo70xplor113i0j4j0ui93zp'>
+            <column-instance column='[exit_velocity_avg]' derivation='Avg' name='[avg:exit_velocity_avg:qk]' pivot='key' type='quantitative' />
+            <column caption='Exit Velocity Avg' datatype='real' name='[exit_velocity_avg]' role='measure' type='quantitative' />
+            <column caption='Last Name, First Name' datatype='string' name='[last_name, first_name]' role='dimension' type='nominal' />
+            <column-instance column='[last_name, first_name]' derivation='None' name='[none:last_name, first_name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:exit_velocity_avg:qk]' field-type='quantitative' max='98.0' min='81.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='whisker-stroke-size' id='refline0' value='4' />
+            <format attr='whisker-stroke-color' id='refline0' value='#000000' />
+            <format attr='whisker-end' id='refline0' value='large' />
+            <format attr='stroke-size' id='refline0' value='4' />
+            <format attr='stroke-color' id='refline0' value='#000000' />
+            <format attr='fill-color' id='refline0' value='#f0f0f0d9' />
+            <format attr='palette' id='refline0' value='bp_gray60' />
+            <format attr='opacity' id='refline0' value='86' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.14mhqo70xplor113i0j4j0ui93zp].[none:last_name, first_name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:exit_velocity_avg:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:exit_velocity_avg:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8350828886032104' />
+                <format attr='mark-color' value='#c8102e' />
+                <format attr='mark-transparency' value='180' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:exit_velocity_avg:qk]</cols>
+      </table>
+      <simple-id uuid='{6EEC7B1E-1268-4E52-B8A2-F35BBD16FA0D}' />
+    </worksheet>
+    <worksheet name='EV By Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Baseball_Savant' name='federated.14mhqo70xplor113i0j4j0ui93zp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14mhqo70xplor113i0j4j0ui93zp'>
+            <column-instance column='[year]' derivation='Attribute' name='[attr:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[exit_velocity_avg]' derivation='Avg' name='[avg:exit_velocity_avg:qk]' pivot='key' type='quantitative' />
+            <column caption='Exit Velocity Avg' datatype='real' name='[exit_velocity_avg]' role='measure' type='quantitative' />
+            <column caption='Last Name, First Name' datatype='string' name='[last_name, first_name]' role='dimension' type='nominal' />
+            <column-instance column='[last_name, first_name]' derivation='None' name='[none:last_name, first_name:nk]' pivot='key' type='nominal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:exit_velocity_avg:qk]' field-type='quantitative' max='98.0' min='80.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.14mhqo70xplor113i0j4j0ui93zp].[attr:year:ok]' value='*' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='stroke-size' id='refline0' value='4' />
+            <format attr='stroke-color' id='refline0' value='#000000' />
+            <format attr='opacity' id='refline0' value='86' />
+            <format attr='whisker-stroke-size' id='refline0' value='4' />
+            <format attr='whisker-stroke-color' id='refline0' value='#000000' />
+            <format attr='stroke-size' id='refline1' value='4' />
+            <format attr='whisker-stroke-size' id='refline1' value='3' />
+            <format attr='whisker-stroke-color' id='refline1' value='#555555' />
+            <format attr='stroke-color' id='refline1' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.14mhqo70xplor113i0j4j0ui93zp].[none:last_name, first_name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:exit_velocity_avg:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:exit_velocity_avg:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.62569057941436768' />
+                <format attr='mark-color' value='#c8102e' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:exit_velocity_avg:qk]</rows>
+        <cols>[federated.14mhqo70xplor113i0j4j0ui93zp].[attr:year:ok]</cols>
+      </table>
+      <simple-id uuid='{CD539665-2C3F-43B0-8283-B989133C07D1}' />
+    </worksheet>
+    <worksheet name='ISO'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Baseball_Savant' name='federated.14mhqo70xplor113i0j4j0ui93zp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14mhqo70xplor113i0j4j0ui93zp'>
+            <column-instance column='[isolated_power]' derivation='Avg' name='[avg:isolated_power:qk]' pivot='key' type='quantitative' />
+            <column caption='Isolated Power' datatype='real' name='[isolated_power]' role='measure' type='quantitative' />
+            <column caption='Last Name, First Name' datatype='string' name='[last_name, first_name]' role='dimension' type='nominal' />
+            <column-instance column='[last_name, first_name]' derivation='None' name='[none:last_name, first_name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refboxplot'>
+            <format attr='opacity' id='refline0' value='86' />
+            <format attr='stroke-size' id='refline0' value='4' />
+            <format attr='stroke-color' id='refline0' value='#000000' />
+            <format attr='whisker-stroke-size' id='refline0' value='4' />
+            <format attr='whisker-stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.14mhqo70xplor113i0j4j0ui93zp].[none:last_name, first_name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:isolated_power:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:isolated_power:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.2853591442108154' />
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:isolated_power:qk]</cols>
+      </table>
+      <simple-id uuid='{CC8B6037-73C1-429F-97A1-C806E4C7E458}' />
+    </worksheet>
+    <worksheet name='ISO By Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Baseball_Savant' name='federated.14mhqo70xplor113i0j4j0ui93zp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14mhqo70xplor113i0j4j0ui93zp'>
+            <column-instance column='[year]' derivation='Attribute' name='[attr:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[isolated_power]' derivation='Avg' name='[avg:isolated_power:qk]' pivot='key' type='quantitative' />
+            <column caption='Isolated Power' datatype='real' name='[isolated_power]' role='measure' type='quantitative' />
+            <column caption='Last Name, First Name' datatype='string' name='[last_name, first_name]' role='dimension' type='nominal' />
+            <column-instance column='[last_name, first_name]' derivation='None' name='[none:last_name, first_name:nk]' pivot='key' type='nominal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.14mhqo70xplor113i0j4j0ui93zp].[attr:year:ok]' value='*' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='stroke-size' id='refline0' value='4' />
+            <format attr='stroke-color' id='refline0' value='#000000' />
+            <format attr='opacity' id='refline0' value='86' />
+            <format attr='whisker-stroke-size' id='refline0' value='4' />
+            <format attr='whisker-stroke-color' id='refline0' value='#000000' />
+            <format attr='opacity' id='refline1' value='91' />
+            <format attr='stroke-size' id='refline1' value='4' />
+            <format attr='whisker-stroke-size' id='refline1' value='4' />
+            <format attr='whisker-stroke-color' id='refline1' value='#000000' />
+            <format attr='stroke-color' id='refline1' value='#333333' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.14mhqo70xplor113i0j4j0ui93zp].[none:last_name, first_name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:isolated_power:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:isolated_power:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.62569057941436768' />
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:isolated_power:qk]</rows>
+        <cols>[federated.14mhqo70xplor113i0j4j0ui93zp].[attr:year:ok]</cols>
+      </table>
+      <simple-id uuid='{69C9F888-73DD-40D7-9CFA-D81E2C9279B5}' />
+    </worksheet>
+    <worksheet name='ISO Teams'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MLB team stats 2021-2025' name='federated.1b90ryj0zuxphk1fyg8850c0wp2b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b90ryj0zuxphk1fyg8850c0wp2b'>
+            <column datatype='real' name='[Avg. ISO (2021-2025)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column-instance column='[Avg. ISO (2021-2025)]' derivation='Avg' name='[avg:Avg. ISO (2021-2025):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. ISO (2021-2025):qk]' field-type='quantitative' max='0.2048765498652291' min='0.11' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='opacity' id='refline1' value='91' />
+            <format attr='stroke-color' id='refline1' value='#000000' />
+            <format attr='whisker-stroke-size' id='refline1' value='4' />
+            <format attr='whisker-stroke-color' id='refline1' value='#555555' />
+            <format attr='stroke-size' id='refline1' value='3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[none:Team:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. ISO (2021-2025):qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. ISO (2021-2025):qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.49375692009925842' />
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. ISO (2021-2025):qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{0AFC73FC-A719-4874-97D6-AE6AA6F3CB77}' />
+    </worksheet>
+    <worksheet name='OBP'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Baseball_Savant' name='federated.14mhqo70xplor113i0j4j0ui93zp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14mhqo70xplor113i0j4j0ui93zp'>
+            <column-instance column='[on_base_percent]' derivation='Avg' name='[avg:on_base_percent:qk]' pivot='key' type='quantitative' />
+            <column caption='Last Name, First Name' datatype='string' name='[last_name, first_name]' role='dimension' type='nominal' />
+            <column-instance column='[last_name, first_name]' derivation='None' name='[none:last_name, first_name:nk]' pivot='key' type='nominal' />
+            <column caption='On Base Percent' datatype='real' name='[on_base_percent]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_percent:qk]' field-type='quantitative' max='0.45124693446088793' min='0.25' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='opacity' id='refline0' value='86' />
+            <format attr='stroke-size' id='refline0' value='4' />
+            <format attr='stroke-color' id='refline0' value='#000000' />
+            <format attr='whisker-stroke-size' id='refline0' value='4' />
+            <format attr='whisker-stroke-color' id='refline0' value='#555555' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.14mhqo70xplor113i0j4j0ui93zp].[none:last_name, first_name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_percent:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_percent:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4832596778869629' />
+                <format attr='mark-color' value='#0000ff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_percent:qk]</cols>
+      </table>
+      <simple-id uuid='{59D23847-CCBB-448C-AA91-02F8C544FF62}' />
+    </worksheet>
+    <worksheet name='OBP By Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Baseball_Savant' name='federated.14mhqo70xplor113i0j4j0ui93zp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14mhqo70xplor113i0j4j0ui93zp'>
+            <column-instance column='[year]' derivation='Attribute' name='[attr:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[on_base_percent]' derivation='Avg' name='[avg:on_base_percent:qk]' pivot='key' type='quantitative' />
+            <column caption='Last Name, First Name' datatype='string' name='[last_name, first_name]' role='dimension' type='nominal' />
+            <column-instance column='[last_name, first_name]' derivation='None' name='[none:last_name, first_name:nk]' pivot='key' type='nominal' />
+            <column caption='On Base Percent' datatype='real' name='[on_base_percent]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_percent:qk]' field-type='quantitative' max='0.49590501052725211' min='0.20000000000000001' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.14mhqo70xplor113i0j4j0ui93zp].[attr:year:ok]' value='*' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='stroke-size' id='refline0' value='4' />
+            <format attr='stroke-color' id='refline0' value='#000000' />
+            <format attr='opacity' id='refline0' value='86' />
+            <format attr='whisker-stroke-size' id='refline0' value='4' />
+            <format attr='whisker-stroke-color' id='refline0' value='#000000' />
+            <format attr='stroke-size' id='refline1' value='4' />
+            <format attr='whisker-stroke-size' id='refline1' value='4' />
+            <format attr='whisker-stroke-color' id='refline1' value='#000000' />
+            <format attr='opacity' id='refline1' value='91' />
+            <format attr='stroke-color' id='refline1' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.14mhqo70xplor113i0j4j0ui93zp].[none:last_name, first_name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_percent:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_percent:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.62569057941436768' />
+                <format attr='mark-color' value='#0000ff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_percent:qk]</rows>
+        <cols>[federated.14mhqo70xplor113i0j4j0ui93zp].[attr:year:ok]</cols>
+      </table>
+      <simple-id uuid='{A31D72F7-4704-4C1B-94F1-7DFDA9795272}' />
+    </worksheet>
+    <worksheet name='OBP Teams '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MLB team stats 2021-2025' name='federated.1b90ryj0zuxphk1fyg8850c0wp2b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b90ryj0zuxphk1fyg8850c0wp2b'>
+            <column datatype='real' name='[Avg. OBP (2021-2025)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column-instance column='[Avg. OBP (2021-2025)]' derivation='Avg' name='[avg:Avg. OBP (2021-2025):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. OBP (2021-2025):qk]' field-type='quantitative' max='0.34499999999999997' min='0.29499999999999998' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='palette' id='refline2' value='bp_gray60' />
+            <format attr='opacity' id='refline2' value='91' />
+            <format attr='stroke-size' id='refline2' value='3' />
+            <format attr='whisker-stroke-size' id='refline2' value='4' />
+            <format attr='whisker-stroke-color' id='refline2' value='#000000' />
+            <format attr='stroke-color' id='refline2' value='#555555' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[none:Team:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. OBP (2021-2025):qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline2' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. OBP (2021-2025):qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.82359117269515991' />
+                <format attr='mark-color' value='#0000ff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. OBP (2021-2025):qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{07ED9367-FE47-469B-ACE4-B1B4A323C6F9}' />
+    </worksheet>
+    <worksheet name='OPS Teams '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MLB team stats 2021-2025' name='federated.1b90ryj0zuxphk1fyg8850c0wp2b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b90ryj0zuxphk1fyg8850c0wp2b'>
+            <column datatype='real' name='[Avg. OPS (2021-2025)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column-instance column='[Avg. OPS (2021-2025)]' derivation='Avg' name='[avg:Avg. OPS (2021-2025):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. OPS (2021-2025):qk]' field-type='quantitative' max='0.79998999999999998' min='0.66000000000000003' range-type='fixed' scope='rows' type='space' />
+            <format attr='width' field='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. OPS (2021-2025):qk]' value='72' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='palette' id='refline2' value='bp_gray60' />
+            <format attr='opacity' id='refline2' value='91' />
+            <format attr='stroke-size' id='refline2' value='3' />
+            <format attr='whisker-stroke-size' id='refline2' value='4' />
+            <format attr='whisker-stroke-color' id='refline2' value='#000000' />
+            <format attr='stroke-color' id='refline2' value='#555555' />
+            <format attr='whisker-stroke-size' id='refline3' value='4' />
+            <format attr='whisker-stroke-color' id='refline3' value='#000000' />
+            <format attr='stroke-size' id='refline3' value='4' />
+            <format attr='stroke-color' id='refline3' value='#333333' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[none:Team:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. OPS (2021-2025):qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline3' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. OPS (2021-2025):qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.71364641189575195' />
+                <format attr='mark-color' value='#ffff00' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. OPS (2021-2025):qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{4725F88F-10D9-4961-9F6B-063A32CA1EC5}' />
+    </worksheet>
+    <worksheet name='On base plus slugging By Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Baseball_Savant' name='federated.14mhqo70xplor113i0j4j0ui93zp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14mhqo70xplor113i0j4j0ui93zp'>
+            <column-instance column='[year]' derivation='Attribute' name='[attr:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[on_base_plus_slg]' derivation='Avg' name='[avg:on_base_plus_slg:qk]' pivot='key' type='quantitative' />
+            <column caption='Last Name, First Name' datatype='string' name='[last_name, first_name]' role='dimension' type='nominal' />
+            <column-instance column='[last_name, first_name]' derivation='None' name='[none:last_name, first_name:nk]' pivot='key' type='nominal' />
+            <column caption='On Base Plus Slg' datatype='real' name='[on_base_plus_slg]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_plus_slg:qk]' field-type='quantitative' max='1.2360299079593231' min='0.5' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.14mhqo70xplor113i0j4j0ui93zp].[attr:year:ok]' value='*' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='stroke-size' id='refline0' value='4' />
+            <format attr='stroke-color' id='refline0' value='#000000' />
+            <format attr='opacity' id='refline0' value='86' />
+            <format attr='whisker-stroke-size' id='refline0' value='4' />
+            <format attr='whisker-stroke-color' id='refline0' value='#000000' />
+            <format attr='stroke-size' id='refline1' value='4' />
+            <format attr='stroke-color' id='refline1' value='#000000' />
+            <format attr='whisker-stroke-size' id='refline1' value='3' />
+            <format attr='whisker-stroke-color' id='refline1' value='#555555' />
+            <format attr='opacity' id='refline1' value='91' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.14mhqo70xplor113i0j4j0ui93zp].[none:last_name, first_name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_plus_slg:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_plus_slg:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.62569057941436768' />
+                <format attr='mark-color' value='#ffff00' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_plus_slg:qk]</rows>
+        <cols>[federated.14mhqo70xplor113i0j4j0ui93zp].[attr:year:ok]</cols>
+      </table>
+      <simple-id uuid='{AC82ED73-B51B-4226-827F-446C5B845834}' />
+    </worksheet>
+    <worksheet name='On base plus slugging Total'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Baseball_Savant' name='federated.14mhqo70xplor113i0j4j0ui93zp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14mhqo70xplor113i0j4j0ui93zp'>
+            <column-instance column='[on_base_plus_slg]' derivation='Avg' name='[avg:on_base_plus_slg:qk]' pivot='key' type='quantitative' />
+            <column caption='Last Name, First Name' datatype='string' name='[last_name, first_name]' role='dimension' type='nominal' />
+            <column-instance column='[last_name, first_name]' derivation='None' name='[none:last_name, first_name:nk]' pivot='key' type='nominal' />
+            <column caption='On Base Plus Slg' datatype='real' name='[on_base_plus_slg]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_plus_slg:qk]' field-type='quantitative' max='1.141156871035941' min='0.52000000000000002' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='stroke-size' id='refline0' value='4' />
+            <format attr='stroke-color' id='refline0' value='#000000' />
+            <format attr='whisker-stroke-size' id='refline0' value='4' />
+            <format attr='whisker-stroke-color' id='refline0' value='#000000' />
+            <format attr='opacity' id='refline0' value='86' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.14mhqo70xplor113i0j4j0ui93zp].[none:last_name, first_name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_plus_slg:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_plus_slg:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.813093900680542' />
+                <format attr='mark-color' value='#ffff00' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_plus_slg:qk]</cols>
+      </table>
+      <simple-id uuid='{1AC2C2FB-E390-4F89-B4DE-69A227252491}' />
+    </worksheet>
+    <worksheet name='RBI'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Baseball_Savant' name='federated.14mhqo70xplor113i0j4j0ui93zp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14mhqo70xplor113i0j4j0ui93zp'>
+            <column-instance column='[b_rbi]' derivation='Avg' name='[avg:b_rbi:qk]' pivot='key' type='quantitative' />
+            <column caption='B Rbi' datatype='integer' name='[b_rbi]' role='measure' type='quantitative' />
+            <column caption='Last Name, First Name' datatype='string' name='[last_name, first_name]' role='dimension' type='nominal' />
+            <column-instance column='[last_name, first_name]' derivation='None' name='[none:last_name, first_name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:b_rbi:qk]' field-type='quantitative' max='128.2879492600423' min='10.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='opacity' id='refline0' value='86' />
+            <format attr='stroke-size' id='refline0' value='4' />
+            <format attr='stroke-color' id='refline0' value='#000000' />
+            <format attr='whisker-stroke-size' id='refline0' value='4' />
+            <format attr='whisker-stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.14mhqo70xplor113i0j4j0ui93zp].[none:last_name, first_name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:b_rbi:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:b_rbi:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4172928333282471' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:b_rbi:qk]</cols>
+      </table>
+      <simple-id uuid='{0741051D-060F-4FC3-AFE9-FE51534BC044}' />
+    </worksheet>
+    <worksheet name='RBI By Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Baseball_Savant' name='federated.14mhqo70xplor113i0j4j0ui93zp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14mhqo70xplor113i0j4j0ui93zp'>
+            <column-instance column='[year]' derivation='Attribute' name='[attr:year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[b_rbi]' derivation='Avg' name='[avg:b_rbi:qk]' pivot='key' type='quantitative' />
+            <column caption='B Rbi' datatype='integer' name='[b_rbi]' role='measure' type='quantitative' />
+            <column caption='Last Name, First Name' datatype='string' name='[last_name, first_name]' role='dimension' type='nominal' />
+            <column-instance column='[last_name, first_name]' derivation='None' name='[none:last_name, first_name:nk]' pivot='key' type='nominal' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.14mhqo70xplor113i0j4j0ui93zp].[attr:year:ok]' value='*' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='stroke-size' id='refline0' value='4' />
+            <format attr='stroke-color' id='refline0' value='#000000' />
+            <format attr='opacity' id='refline0' value='86' />
+            <format attr='whisker-stroke-size' id='refline0' value='4' />
+            <format attr='whisker-stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.14mhqo70xplor113i0j4j0ui93zp].[none:last_name, first_name:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:b_rbi:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:b_rbi:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.62569057941436768' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:b_rbi:qk]</rows>
+        <cols>[federated.14mhqo70xplor113i0j4j0ui93zp].[attr:year:ok]</cols>
+      </table>
+      <simple-id uuid='{E1C19CE9-788E-4356-B4A1-1DBB4E88BED1}' />
+    </worksheet>
+    <worksheet name='RBI Teams'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MLB team stats 2021-2025' name='federated.1b90ryj0zuxphk1fyg8850c0wp2b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b90ryj0zuxphk1fyg8850c0wp2b'>
+            <column datatype='integer' name='[Avg. RBI (2021-2025)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column-instance column='[Avg. RBI (2021-2025)]' derivation='Avg' name='[avg:Avg. RBI (2021-2025):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. RBI (2021-2025):qk]' field-type='quantitative' max='830.0' min='600.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='palette' id='refline2' value='bp_gray60' />
+            <format attr='opacity' id='refline2' value='91' />
+            <format attr='stroke-size' id='refline2' value='3' />
+            <format attr='whisker-stroke-size' id='refline2' value='4' />
+            <format attr='whisker-stroke-color' id='refline2' value='#000000' />
+            <format attr='stroke-color' id='refline2' value='#555555' />
+            <format attr='whisker-stroke-size' id='refline3' value='4' />
+            <format attr='whisker-stroke-color' id='refline3' value='#000000' />
+            <format attr='stroke-size' id='refline3' value='4' />
+            <format attr='stroke-color' id='refline3' value='#333333' />
+            <format attr='opacity' id='refline4' value='91' />
+            <format attr='whisker-stroke-size' id='refline4' value='4' />
+            <format attr='whisker-stroke-color' id='refline4' value='#000000' />
+            <format attr='stroke-color' id='refline4' value='#333333' />
+            <format attr='stroke-size' id='refline4' value='3' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[none:Team:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. RBI (2021-2025):qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline4' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. RBI (2021-2025):qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.49375692009925842' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. RBI (2021-2025):qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{4F541663-48EF-4FD7-92FC-B291EFE31098}' />
+    </worksheet>
+    <worksheet name='Slug Teams '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='MLB team stats 2021-2025' name='federated.1b90ryj0zuxphk1fyg8850c0wp2b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b90ryj0zuxphk1fyg8850c0wp2b'>
+            <column datatype='real' name='[Avg. SLG (2021-2025)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column-instance column='[Avg. SLG (2021-2025)]' derivation='Avg' name='[avg:Avg. SLG (2021-2025):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. SLG (2021-2025):qk]' field-type='quantitative' max='0.45999990000000002' min='0.34999999999999998' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='palette' id='refline2' value='bp_gray60' />
+            <format attr='opacity' id='refline2' value='91' />
+            <format attr='stroke-size' id='refline2' value='3' />
+            <format attr='whisker-stroke-size' id='refline2' value='4' />
+            <format attr='whisker-stroke-color' id='refline2' value='#000000' />
+            <format attr='stroke-color' id='refline2' value='#555555' />
+            <format attr='whisker-stroke-size' id='refline3' value='4' />
+            <format attr='whisker-stroke-color' id='refline3' value='#000000' />
+            <format attr='stroke-size' id='refline3' value='4' />
+            <format attr='stroke-color' id='refline3' value='#333333' />
+            <format attr='opacity' id='refline4' value='91' />
+            <format attr='whisker-stroke-size' id='refline4' value='4' />
+            <format attr='whisker-stroke-color' id='refline4' value='#000000' />
+            <format attr='stroke-color' id='refline4' value='#333333' />
+            <format attr='stroke-size' id='refline4' value='3' />
+            <format attr='opacity' id='refline5' value='91' />
+            <format attr='stroke-size' id='refline5' value='4' />
+            <format attr='whisker-stroke-size' id='refline5' value='5' />
+            <format attr='whisker-stroke-color' id='refline5' value='#000000' />
+            <format attr='stroke-color' id='refline5' value='#333333' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[none:Team:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. SLG (2021-2025):qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline5' label-type='none' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. SLG (2021-2025):qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.66966849565505981' />
+                <format attr='mark-color' value='#b6992d' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b90ryj0zuxphk1fyg8850c0wp2b].[avg:Avg. SLG (2021-2025):qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{16B2C040-A1B8-4525-9F52-EEFF228C6811}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='BA DB'>
+      <style />
+      <size maxheight='1460' maxwidth='1750' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='10' name='BA' show-title='false' w='46650' x='483' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98002' id='11' name='BA By Year' show-title='false' w='52384' x='47133' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='35' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='34' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='98002' id='10' is-fixed='true' name='BA' show-title='false' w='46650' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98002' id='11' is-fixed='true' name='BA By Year' show-title='false' w='52384' x='47133' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{CFBFDD9E-3BEB-4B01-8CC4-4D43A6AF4197}' />
+    </dashboard>
+    <dashboard name='BA Story ' type='storyboard'>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='987' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1616' minheight='964' minwidth='1616' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='99010' x='495' y='830'>
+            <zone h='4357' id='3' type-v2='title' w='99010' x='495' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='99010' x='495' y='5187' />
+            <zone h='83506' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='99010' x='495' y='15664'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='These visualizations shows the overall distribution (left visual), and then visualizations between years (right visual) for Batting Average ' captured-sheet='BA DB' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{765D8B2D-BD1C-4178-806E-D16D43F7BA88}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='EV DB'>
+      <style />
+      <size maxheight='1460' maxwidth='1750' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='3' name='EV' show-title='false' w='49517' x='483' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98002' id='5' name='EV By Year' show-title='false' w='49517' x='50000' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='35' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='34' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone fixed-size='280' h='98002' id='3' is-fixed='true' name='EV' show-title='false' w='49517' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98002' id='5' is-fixed='true' name='EV By Year' show-title='false' w='49517' x='50000' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{925B148A-5913-4D2D-ACD5-92DC6D2C8B5C}' />
+    </dashboard>
+    <dashboard name='EV Story' type='storyboard'>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='860' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1616' minheight='964' minwidth='1616' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='99010' x='495' y='830'>
+            <zone h='4357' id='3' type-v2='title' w='99010' x='495' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='99010' x='495' y='5187' />
+            <zone h='83506' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='99010' x='495' y='15664'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='These visualizations shows the overall distribution (left visual), and then visualizations between years (right most visual) for Exit Velocity' captured-sheet='EV DB' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{E82934EF-960C-4732-953E-BDA3B11F8724}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='ISO DB'>
+      <style />
+      <size maxheight='1460' maxwidth='1750' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='1' name='ISO' w='49517' x='483' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98002' id='3' name='ISO By Year' w='49517' x='50000' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='26' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone fixed-size='280' h='98002' id='1' is-fixed='true' name='ISO' w='49517' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98002' id='3' is-fixed='true' name='ISO By Year' w='49517' x='50000' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{16B72478-24C1-47B4-A23F-60AC1C5DFC38}' />
+    </dashboard>
+    <dashboard name='ISO Story ' type='storyboard'>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='836' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1616' minheight='964' minwidth='1616' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='99010' x='495' y='830'>
+            <zone h='4357' id='3' type-v2='title' w='99010' x='495' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='99010' x='495' y='5187' />
+            <zone h='83506' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='99010' x='495' y='15664'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='These visualizations shows the overall distribution (left visual), and then visualizations between years (right visual) for Isolated power' captured-sheet='ISO DB' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{2E6771EA-8698-4107-BBA6-E5B74B4189F1}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='OBP DB'>
+      <style />
+      <size maxheight='1460' maxwidth='1750' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='12' name='OBP' show-title='false' w='32830' x='483' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98002' id='13' name='OBP By Year' show-title='false' w='41446' x='33313' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98002' id='14' name='OBP Teams ' show-title='false' w='24758' x='74759' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='38' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='37' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone fixed-size='280' h='98002' id='12' is-fixed='true' name='OBP' show-title='false' w='32830' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98002' id='13' is-fixed='true' name='OBP By Year' show-title='false' w='41446' x='33313' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98002' id='14' is-fixed='true' name='OBP Teams ' show-title='false' w='24758' x='74759' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{CEFC0D1E-D8AC-4AD7-91D5-0A9144CBAA93}' />
+    </dashboard>
+    <dashboard name='OBP Story ' type='storyboard'>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='948' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1616' minheight='964' minwidth='1616' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='99010' x='495' y='830'>
+            <zone h='4357' id='3' type-v2='title' w='99010' x='495' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='99010' x='495' y='5187' />
+            <zone h='83506' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='99010' x='495' y='15664'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Something like These visualizations shows the overall distribution (left most visual), and then visualizations between years (middle visual), and then overall team distribution (right most visual) for On Base Percentage.' captured-sheet='OBP DB' id='1'>
+                    <currentDeltas>
+                      <worksheet name='OBP By Year'>
+                        <selection-collection>
+                          <tuple-selection>
+                            <tuple-reference>
+                              <tuple-descriptor>
+                                <pane-descriptor>
+                                  <x-fields>
+                                    <field>[federated.14mhqo70xplor113i0j4j0ui93zp].[attr:year:ok]</field>
+                                  </x-fields>
+                                  <y-fields>
+                                    <field>[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_percent:qk]</field>
+                                  </y-fields>
+                                </pane-descriptor>
+                                <columns>
+                                  <field>[federated.14mhqo70xplor113i0j4j0ui93zp].[avg:on_base_percent:qk]</field>
+                                  <field>[federated.14mhqo70xplor113i0j4j0ui93zp].[none:last_name, first_name:nk]</field>
+                                  <field>[federated.14mhqo70xplor113i0j4j0ui93zp].[attr:year:ok]</field>
+                                </columns>
+                              </tuple-descriptor>
+                              <tuple>
+                                <value>0.46500000000000002</value>
+                                <value>&quot;Soto, Juan&quot;</value>
+                                <value>2021</value>
+                              </tuple>
+                            </tuple-reference>
+                          </tuple-selection>
+                        </selection-collection>
+                      </worksheet>
+                    </currentDeltas>
+                    <capturedDeltas />
+                  </story-point>
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{F2F5D59F-2DD7-4E3F-BE80-44CCFBCBCB85}' />
+    </dashboard>
+    <dashboard name='On Base Plus Slugging Story ' type='storyboard'>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='1142' />
+        </style-rule>
+      </style>
+      <size maxheight='864' maxwidth='1616' minheight='864' minwidth='1616' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98148' id='1' param='vert' removable='false' type-v2='layout-flow' w='99010' x='495' y='926'>
+            <zone h='4861' id='3' type-v2='title' w='99010' x='495' y='926' />
+            <zone h='11690' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='99010' x='495' y='5787' />
+            <zone h='81597' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='99010' x='495' y='17477'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='These visualizations shows the overall distribution (left visual), and then visualizations between years (right visual) for On base plus slugging' captured-sheet='On base + Sligging DB' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{B596548E-A102-41DE-AAF1-14BD47E1660F}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='On base + Sligging DB'>
+      <style />
+      <size maxheight='1460' maxwidth='1750' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='1' name='On base plus slugging Total' show-title='false' w='49517' x='483' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98002' id='3' name='On base plus slugging By Year' show-title='false' w='49517' x='50000' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='26' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone fixed-size='280' h='98002' id='1' is-fixed='true' name='On base plus slugging Total' show-title='false' w='49517' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98002' id='3' is-fixed='true' name='On base plus slugging By Year' show-title='false' w='49517' x='50000' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C3BCDE13-76B7-483F-AB3F-EE80FE343766}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='RBI DB'>
+      <style />
+      <size maxheight='1460' maxwidth='1750' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='4' name='RBI' show-title='false' w='49517' x='483' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98002' id='5' name='RBI By Year' show-title='false' w='49517' x='50000' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='28' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone fixed-size='280' h='98002' id='4' is-fixed='true' name='RBI' show-title='false' w='49517' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98002' id='5' is-fixed='true' name='RBI By Year' show-title='false' w='49517' x='50000' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{34801A2C-B636-4D77-9632-C014C23434D6}' />
+    </dashboard>
+    <dashboard name='RBI Story ' type='storyboard'>
+      <style>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='996' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1616' minheight='964' minwidth='1616' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='99010' x='495' y='830'>
+            <zone h='4357' id='3' type-v2='title' w='99010' x='495' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='99010' x='495' y='5187' />
+            <zone h='83506' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='99010' x='495' y='15664'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='These visualizations shows the overall distribution (left visual), and then visualizations between years (right visual) for Runs batted in' captured-sheet='RBI DB' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{D9748C88-C07C-4FCF-B5C9-CF7948225A2F}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='63'>
+    <window class='worksheet' name='EV'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9077858D-AC4A-46B3-9FC4-0FBE02A49708}' />
+    </window>
+    <window class='worksheet' name='EV By Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='220'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{1C54EBE8-8026-496D-89AC-834769B40E91}' />
+    </window>
+    <window class='worksheet' name='BA'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{FA9176B5-0F45-4755-8E98-65B7F9FC4DA9}' />
+    </window>
+    <window class='worksheet' name='BA By Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='220'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E972FA02-A46E-4408-B984-312C6C5BB132}' />
+    </window>
+    <window class='worksheet' name='OBP'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{8CC20A73-D45B-49A5-9B45-2EF33962D687}' />
+    </window>
+    <window class='worksheet' name='OBP By Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='220'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{3F35D9FE-FD4A-4090-9E31-21315C8B5123}' />
+    </window>
+    <window class='worksheet' name='OBP Teams '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{EC440629-9763-4684-9223-0803448FE418}' />
+    </window>
+    <window class='worksheet' name='On base plus slugging Total'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B6A1ABAD-3BB8-43C6-9CC8-8B4494BE1674}' />
+    </window>
+    <window class='worksheet' name='On base plus slugging By Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='220'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{117F5808-7980-4901-91F7-2BAE145836A7}' />
+    </window>
+    <window class='worksheet' name='OPS Teams '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{10DDD75B-E782-46F1-8AA7-FA233A723A0E}' />
+    </window>
+    <window class='worksheet' name='RBI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{650B8ADA-163B-43B9-9978-95EBC67B842B}' />
+    </window>
+    <window class='worksheet' name='RBI By Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='220'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A1D1A4C7-7A28-421E-BE21-D892FC91CE0C}' />
+    </window>
+    <window class='worksheet' name='RBI Teams'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{DCDA9C75-6121-49B3-B272-9D42189B7CB8}' />
+    </window>
+    <window class='worksheet' name='ISO'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{42FAF066-848E-4922-B7D4-C72D92AA6187}' />
+    </window>
+    <window class='worksheet' name='ISO By Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='220'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C1EB0ED0-A20B-4653-87F6-08B06E6219D3}' />
+    </window>
+    <window class='worksheet' name='ISO Teams'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BFAB0530-F15F-451F-9731-5D799D7F17E0}' />
+    </window>
+    <window class='worksheet' name='Slug Teams '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A1779766-4514-4EDE-B5A0-971AFD19C5E0}' />
+    </window>
+    <window class='dashboard' name='EV DB'>
+      <viewpoints>
+        <viewpoint name='EV'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='EV By Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{8AFD2B8A-E839-495D-BC17-527D6AD2413F}' />
+    </window>
+    <window class='dashboard' name='BA DB'>
+      <viewpoints>
+        <viewpoint name='BA'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='BA By Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{3CAC2480-CBAA-48FB-8980-3CF5BC4C9830}' />
+    </window>
+    <window class='dashboard' name='OBP DB'>
+      <viewpoints>
+        <viewpoint name='OBP'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='OBP By Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='OBP Teams '>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='13' />
+      <simple-id uuid='{17EFADAC-D5FA-4450-AAAD-75750CB5AC23}' />
+    </window>
+    <window class='dashboard' name='On base + Sligging DB'>
+      <viewpoints>
+        <viewpoint name='On base plus slugging By Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='On base plus slugging Total'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{3DCD6919-D5AC-4368-A533-B4CE4185474F}' />
+    </window>
+    <window class='dashboard' name='RBI DB'>
+      <viewpoints>
+        <viewpoint name='RBI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='RBI By Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{472961E4-6FBB-435F-A42D-39393E60CDCA}' />
+    </window>
+    <window class='dashboard' name='ISO DB'>
+      <viewpoints>
+        <viewpoint name='ISO'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='ISO By Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{79ED9C95-3274-4EF2-BC4F-0CB1D2E7F84C}' />
+    </window>
+    <window class='dashboard' name='EV Story'>
+      <viewpoints />
+      <active id='4' />
+      <simple-id uuid='{51314897-FDAE-4823-9B98-7C4A3A0AFF3F}' />
+    </window>
+    <window class='dashboard' name='BA Story '>
+      <viewpoints />
+      <active id='4' />
+      <simple-id uuid='{5F2A3C5C-34A5-49E9-9CC0-5AEF70D329E8}' />
+    </window>
+    <window class='dashboard' maximized='true' name='OBP Story '>
+      <viewpoints />
+      <active id='4' />
+      <simple-id uuid='{C3B8EFB8-512F-48EE-B376-FC782A01F7B3}' />
+    </window>
+    <window class='dashboard' name='On Base Plus Slugging Story '>
+      <viewpoints />
+      <active id='4' />
+      <simple-id uuid='{C17DBE91-BCFB-478B-8DB1-A7C4258B3F5E}' />
+    </window>
+    <window class='dashboard' name='RBI Story '>
+      <viewpoints />
+      <active id='4' />
+      <simple-id uuid='{D4A0CB7D-3431-4507-B956-C462955ECC2E}' />
+    </window>
+    <window class='dashboard' name='ISO Story '>
+      <viewpoints />
+      <active id='4' />
+      <simple-id uuid='{4FABF00E-BB6C-4F0C-BD54-79FB52A70A41}' />
+    </window>
+  </windows>
+</workbook>
